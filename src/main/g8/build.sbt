@@ -1,25 +1,29 @@
 name := "$name;format="Camel"$"
 
-fork := true
-javaOptions in test ++= Seq(
-  "-Xms128M", "-Xmx256M",
-  "-XX:MaxPermSize=256M",
-  "-XX:+CMSClassUnloadingEnabled"
-)
-
-parallelExecution in test := false
-
 version := "1.0"
 
 scalaVersion := "$scalaVersion$"
 
+val antlrVer = "4.7.1"
+enablePlugins(Antlr4Plugin)
+antlr4Version in Antlr4 := antlrVer
+antlr4PackageName in Antlr4 := Some("$package$.antlr")
+antlr4GenListener in Antlr4 := false
+antlr4GenVisitor in Antlr4 := true
+
 libraryDependencies ++=
   Seq(
-    "org.typelevel" %% "cats-core" % "1.0.1",
-    "com.chuusai" %% "shapeless" % "2.3.2",
-    "io.github.mkotsur" %% "aws-lambda-scala" % "0.0.10",
-    
+
+    "org.antlr" % "antlr4-runtime" % antlrVer,
+    "org.antlr" % "stringtemplate" % "4.0.2",
+
+    "org.rogach" %% "scallop" % "3.1.3",
+    "ch.qos.logback" % "logback-classic" % "1.2.3",
+    "com.typesafe" % "config" % "1.3.3",
+    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0",
+
     "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+
   )
 
 mainClass in assembly := Some("$package$.Main")

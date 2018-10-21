@@ -1,19 +1,25 @@
 package $package$
 
-// import io.circe.generic.auto._
-// import io.github.mkotsur.aws.handler.Lambda._
-// import io.github.mkotsur.aws.handler.Lambda
-//
-// case class Ping(inputMsg: String)
-//
-// case class Pong(outputMsg: String)
-//
-// class Main extends Lambda[Ping, Pong] {
-//
-//   override def handle(ping: Ping) = Right(Pong(ping.inputMsg.reverse))
-//
-// }
+import com.typesafe.scalalogging.LazyLogging
+import org.rogach.scallop._
 
-object Main extends App {
-  // got any helpful boilerplate for your users?
+object Main extends LazyLogging {
+
+  class Conf(arguments: Seq[String]) extends ScallopConf(arguments) {
+    //val apples = opt[Int](required = true)
+    //val bananas = opt[Int]()
+    val expression: ScallopOption[String] = trailArg[String]()
+    verify()
+  }
+
+  def main(args: Array[String]): Unit = {
+
+    val conf = new Conf(args)
+    conf.expression.toOption match {
+      case Some(input) => println(Parse(input))
+      case _           => conf.printHelp()
+    }
+
+  }
+
 }
