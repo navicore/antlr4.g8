@@ -1,6 +1,8 @@
 a [g8] template for using [antlr4] with [sbt] and [scala]
 ---
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b04a01aca1bf47459fdf41d36ed781ae)](https://app.codacy.com/app/navicore/antlr4.g8?utm_source=github.com&utm_medium=referral&utm_content=navicore/antlr4.g8&utm_campaign=Badge_Grade_Dashboard)
+
 Inspired by [this](https://saumitra.me/blog/creating-dsl-with-antlr4-and-scala/) helpful blog post.
 
 ```console
