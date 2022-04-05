@@ -1,3 +1,4 @@
+.scalafmt.conf
 project/project
 project/metals.sbt
 target/
