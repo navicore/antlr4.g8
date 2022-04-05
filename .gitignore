@@ -1,3 +1,5 @@
+project/project
+project/metals.sbt
 target/
 boot/
 lib_managed/
