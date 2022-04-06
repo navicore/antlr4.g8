@@ -15,7 +15,7 @@ libraryDependencies ++=
   Seq(
 
     "org.antlr" % "antlr4-runtime" % antlrVer,
-    "org.antlr" % "stringtemplate" % "4.3.2",
+    "org.antlr" % "stringtemplate" % "4.0.2",
 
     "org.rogach" %% "scallop" % "4.1.0",
     "ch.qos.logback" % "logback-classic" % "1.2.11",
