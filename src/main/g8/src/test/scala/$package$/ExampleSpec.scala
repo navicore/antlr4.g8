@@ -1,8 +1,9 @@
 package $package$
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class ExampleSpec extends FlatSpec with Matchers {
+class ExampleSpec extends AnyFlatSpec with Matchers {
 
   "A Stack" should "pop values in last-in-first-out order" in {
     val stack = List[Int]()

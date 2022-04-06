@@ -1,9 +1,10 @@
 package $package$
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 import $package$.antlr4._
 
-class $grammar$VisitorSpec extends FlatSpec with Matchers {
+class $grammar$VisitorSpec extends AnyFlatSpec with Matchers {
 
   "addition should" should "add" in {
     Parse("1 + 2") should be(ExprResult(Some(3)))
