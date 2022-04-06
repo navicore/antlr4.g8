@@ -4,7 +4,7 @@ version := "1.0"
 
 scalaVersion := "$scalaVersion$"
 
-val antlrVer = "4.7.1"
+val antlrVer = "4.9.3"
 enablePlugins(Antlr4Plugin)
 antlr4Version in Antlr4 := antlrVer
 antlr4PackageName in Antlr4 := Some("$package$.antlr")
@@ -15,14 +15,14 @@ libraryDependencies ++=
   Seq(
 
     "org.antlr" % "antlr4-runtime" % antlrVer,
-    "org.antlr" % "stringtemplate" % "4.0.2",
+    "org.antlr" % "stringtemplate" % "4.3.2",
 
-    "org.rogach" %% "scallop" % "3.1.3",
-    "ch.qos.logback" % "logback-classic" % "1.2.3",
-    "com.typesafe" % "config" % "1.3.3",
-    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0",
+    "org.rogach" %% "scallop" % "4.1.0",
+    "ch.qos.logback" % "logback-classic" % "1.2.11",
+    "com.typesafe" % "config" % "1.4.2",
+    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4",
 
-    "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+    "org.scalatest" %% "scalatest" % "3.2.11" % "test"
 
   )
 
