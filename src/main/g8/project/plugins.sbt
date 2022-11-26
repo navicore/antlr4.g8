@@ -1,4 +1,4 @@
-addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.8.1")
+addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.8.3")
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.2")
 addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.7")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.9.3")
