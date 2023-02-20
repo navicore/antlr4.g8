@@ -4,7 +4,7 @@ version := "1.0"
 
 scalaVersion := "$scalaVersion$"
 
-val antlrVer = "4.11.1"
+val antlrVer = "4.12.0"
 enablePlugins(Antlr4Plugin)
 antlr4Version in Antlr4 := antlrVer
 antlr4PackageName in Antlr4 := Some("$package$.antlr")
