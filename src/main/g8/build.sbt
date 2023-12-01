@@ -18,7 +18,7 @@ libraryDependencies ++=
     "org.antlr" % "stringtemplate" % "4.0.2",
 
     "org.rogach" %% "scallop" % "5.0.0",
-    "ch.qos.logback" % "logback-classic" % "1.4.11",
+    "ch.qos.logback" % "logback-classic" % "1.4.13",
     "com.typesafe" % "config" % "1.4.3",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
 
