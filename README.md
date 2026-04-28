@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/antlr4.g8](https://git.navicore.tech/navicore/antlr4.g8).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b04a01aca1bf47459fdf41d36ed781ae)](https://app.codacy.com/app/navicore/antlr4.g8?utm_source=github.com&utm_medium=referral&utm_content=navicore/antlr4.g8&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/navicore/antlr4.g8.svg?branch=master)](https://travis-ci.org/navicore/antlr4.g8)
 
